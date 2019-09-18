@@ -1,0 +1,12 @@
+.img--frame {
+  @extend %img-frame !optional;
+    width: 100%;
+    max-width: em(400px);
+  }
+  
+  .img--logo,
+  .img--avatar,
+  .img--frame {
+    @extend %center !optional;
+    padding-top: 8px;
+  }

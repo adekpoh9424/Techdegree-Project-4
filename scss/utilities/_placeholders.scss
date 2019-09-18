@@ -1,0 +1,44 @@
+%link {
+    color: $link-color;
+    text-decoration: none;
+}
+
+//Images
+
+%centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%responsive-image {
+    max-width: 100%;
+
+}
+
+//Nav Items
+
+%nav-item {
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+}
+
+//Buttons
+
+%btn {
+    display: block;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+
+//Grid Col
+
+%grid__col {
+    display: block;
+    border-radius: 5px;
+    border: none;
+}

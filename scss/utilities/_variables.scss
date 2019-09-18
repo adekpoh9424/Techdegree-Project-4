@@ -1,0 +1,45 @@
+//Media Query Breakpoints
+
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-desktop: 1024px;
+
+//Button Color
+
+$nav_color: hsl(166, 70%, 61%);
+$default_color: #51ddfc;
+$success_color: #63cc82;
+$error_color: #e4757a;
+$warning_color: #fd7856;
+$info_color: #927bc1;
+
+//Grid Color
+
+$col_3: #80e8d1;
+$col_4: #7ee6fd;
+$col_5: #88d9a0;
+$col_6: #79c2d6;
+$col_7: #ec9fa3;
+$col_8: #fd9f85;
+$col_12: #80e8d1;
+
+//Font Variables
+
+$Lora: "Lora", serif;
+$bold-font: 700;
+$mid-font: 500;
+$link-color: #51ddfc;
+$font-color: #555656;
+$headline-color: #58E1C1;
+$normal-font: 400;
+
+//Font Stack
+
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+$Lora: "Lora", serif;
+
+* {
+  font-family: $Lora;
+  font-weight: normal;
+}

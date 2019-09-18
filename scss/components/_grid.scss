@@ -1,0 +1,140 @@
+// **********************************************
+// _grid.scss
+// styles related to the grid system and
+// main container.
+// major grid styles have been added here for you
+// but additional styling may be needed
+// **********************************************
+
+
+// grid base class
+.grid {
+
+  // .grid__row
+  &__row {
+    padding: 1em 10px;
+    display: flex;
+    flex-direction: column;
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @include mq(tablet) {
+      flex-direction: row;
+    }
+  }
+
+  // .grid__col
+  &__col {
+
+    // create grid columns dynamically
+    // loop through each column size
+    @for $i from 1 through 12 {
+
+      // concatenate CSS selector, ie when $i = 1,
+      // selector would be .grid__col--1
+      &--#{$i} {
+
+        // base styles applied to all grid columns 
+        // NOTE: could be converted to a placeholder, along with margin
+        // from the  media query
+        margin-top: 10px;
+        flex-basis: 100%;
+
+        // NOTE: replace with media query mixin if aiming for exceeds
+        @include mq(tablet) {
+
+          // base stlyes applied to all grid columns
+          margin-top: 0;
+          text-align: center;
+
+          // make column width a percentage of the column number / total columns
+          flex-basis: #{$i / 12 * 100 + "%"} ;
+        }
+      }
+    }
+  }
+}
+
+// targets all elements with classes that begin with grid__col
+[class^=grid__col] {
+  // grid__col + grid__col, targets two sibling columns
+  & + & {
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @include mq(tablet) {
+
+      // add grid gutter
+      margin-left: 10px;
+    }
+  }
+}
+
+.grid__col--3 {
+  @include flexbox;
+}
+
+.grid__col--6 {
+  @include flexbox;
+}
+
+.theme__colors.grid__col--1,
+.theme__colors.grid__col--3,
+.theme__colors.grid__col--4,
+.theme__colors.grid__col--5,
+.theme__colors.grid__col--6,
+.theme__colors.grid__col--7,
+.theme__colors.grid__col--8,
+.theme__colors.grid__col--12 {
+  font-size: 0.95em;
+  color: #888;
+  border: none;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 11px 13px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.grid__col--3.theme__colors {
+  background-color: $col_3;
+}
+
+.grid__col--4.theme__colors {
+  background-color: $col_4;
+}
+
+.grid__col--5.theme__colors {
+  background-color: $col_5;
+}
+
+.grid__col--6.theme__colors {
+  background-color: $col_6;
+}
+
+.grid__col--7.theme__colors {
+  background-color: $col_7;
+}
+
+.grid__col--8.theme__colors {
+  background-color: $col_8;
+}
+
+.grid__col--12.theme__colors {
+  background-color: $col_12;
+}
+
+@include mq(tablet) {
+  .grid__row {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.centered {
+  @include mq(tablet) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+}

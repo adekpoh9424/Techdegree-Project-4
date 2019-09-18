@@ -1,0 +1,60 @@
+// Typography
+
+.container {
+    font-family: $Lora;
+}
+
+// Header
+
+.headline--primary {
+    padding-left: 15px;
+    margin-bottom: 1em;
+}
+
+*.headline--primary {
+    @include headline--primary;
+}
+
+.headline--secondary {
+    margin-left: .5rem;
+    font-size: 1em;
+}
+
+*.headline--secondary {
+    @include h4;
+}
+
+//  Links
+
+.link {
+  font-size: 1em;
+  font-weight: $mid-font;
+  color: $link-color;
+  text-decoration: none;
+}
+
+//  Blockquote
+
+.blockquote {
+    @include quote;
+}
+
+.card {
+    text-align: left;
+}
+
+.card p {
+    @include body-copy;
+}
+
+#images {
+    padding-left: 10px;
+}
+
+#buttons {
+    padding-left: 10px;
+}
+
+#grid {
+    padding-left: 10px;
+}

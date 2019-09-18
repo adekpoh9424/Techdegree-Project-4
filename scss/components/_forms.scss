@@ -1,0 +1,29 @@
+// form
+
+.form {
+    flex-basis: 100%;
+  }
+  
+  .form__input {
+    width: 94%;
+    border: none;
+    display: block;
+    border-bottom: 2px solid #927bc1;
+    margin: 10px auto 0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .form__label--hidden {
+      height: 1px;
+      left: -10000px;
+      position: absolute;
+      overflow: hidden;
+      top: auto;
+      width: 1px;
+      display: none;
+      visibility: hidden;
+  }
+  
+  
+     

@@ -1,0 +1,86 @@
+.btn--default {
+    width: 100%;
+    border: none;
+    background: $default_color;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .btn--success {
+    width: 100%;
+    border: none;
+    background: $success_color;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .btn--error {
+    width: 100%;
+    border: none;
+    background: $error_color;
+    height: 30px;
+    text-transform: uppercase;  
+    border-radius: 8px;  
+    margin-bottom: 12px; 
+  }
+  
+  .btn--warning {  
+    width: 100%;
+    border: none;  
+    background: $warning_color;  
+    height: 30px;  
+    text-transform: uppercase;  
+    border-radius: 8px;  
+    margin-bottom: 12px; 
+  }
+    
+  .btn--info { 
+    width: 100%;   
+    border: none;  
+    background: $info_color;  
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  // Media Query Buttons
+  
+  .btn--info,
+  .btn--default,
+  .btn--error,
+  .btn--success,
+  .btn--warning {
+    @include mq(tablet) {
+      width: 8rem;
+    }
+  }
+  .grid__col--12 {
+    @include mq(desktop) {
+      text-align: center;
+      
+      .theme__colors {
+        display: inline;
+        margin: 0 10px; 
+        
+      }
+      
+    }
+  }
+
+  
+  .btn--info,
+  .btn--default,
+  .btn--error,
+  .btn--success,
+  .btn--warning {
+    @include mq(desktop) {
+      width: 18%;
+    }
+  }
+  
+  
