@@ -707,7 +707,7 @@ template {
   visibility: hidden;
 }
 
-.img-frame {
+.img--frame {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -717,7 +717,7 @@ template {
   border: 1px solid #79c2d6;
 }
 
-.img-avatar {
+.img--avatar {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -727,7 +727,7 @@ template {
   text-align: center;
 }
 
-.img-logo {
+.img--logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
