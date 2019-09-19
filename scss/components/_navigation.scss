@@ -1,18 +1,4 @@
-.grid__col--9 ul {
-    @include flexbox;
-    padding: 0;
-    @include mq(tablet) {
-        flex-wrap: nowrap;
-        width: 60%;
-    }
-}
 
-.grid__col--9 nav {
-    @include mq(tablet) {
-        display: flex;
-        justify-content: flex-end;
-    }
-}
 
 .nav__item  {
     @include nav-button;

@@ -76,6 +76,11 @@
   @include flexbox;
 }
 
+.container {
+  width: 90%;
+  max-width: 1400px;
+}
+
 .theme__colors.grid__col--1,
 .theme__colors.grid__col--3,
 .theme__colors.grid__col--4,
@@ -136,5 +141,21 @@
     margin-right: auto;
     text-align: center;
 
+  }
+}
+
+.grid__col--9 ul {
+  @include flexbox;
+  padding: 0;
+  @include mq(tablet) {
+      flex-wrap: nowrap;
+      width: 60%;
+  }
+}
+
+.grid__col--9 nav {
+  @include mq(tablet) {
+      display: flex;
+      justify-content: flex-end;
   }
 }
